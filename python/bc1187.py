@@ -11,7 +11,7 @@ for c in range(0, 12):
 
 for c in range(0, 12):
     for d in range(count, aux+1):
-        res += ma[c][d];
+        res += ma[c][d]
     aux -= 1
     count += 1
 
