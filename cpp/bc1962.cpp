@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -12,14 +12,9 @@ int main()
 	{	
 		cin >> ano;
 		
-		resY = abs(ano-2015);
+		resY = 2015-ano;
 		
-		if(resY >= 2015)
-		{
-			resY++;
-			cout << resY << " A.C." << endl;
-		}
-		else cout << resY << " D.C." << endl;
+		resY > 0? cout << resY << " D.C." << endl : cout << abs(resY)+1 << " A.C." << endl;
 		
 	}
 }
