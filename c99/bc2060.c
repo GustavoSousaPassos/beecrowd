@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main()
+{
+	int tVec, c2, c3, c4, c5, i;
+	c2 = c3 = c4 = c5 = 0;
+	char buffer[1000];
+	
+	scanf("%d", &tVec);
+	
+	getchar();
+	
+	fgets(buffer, sizeof(buffer), stdin);
+	
+	int *vec = malloc(tVec * sizeof(int));
+	
+	char *token = strtok(buffer, " ");
+	
+	for(i = 0; i < tVec; i++)
+	{
+		vec[i] = strtol(token, NULL, 10);
+		token = strtok(NULL, " ");
+	}
+	
+	for(i = 0;i < tVec; i++)
+	{
+		if(vec[i] % 2 == 0) c2++;
+		if(vec[i] % 3 == 0) c3++;
+		if(vec[i] % 4 == 0) c4++;
+		if(vec[i] % 5 == 0) c5++;
+	}
+	
+	printf("%d Multiplo(s) de 2\n%d Multiplo(s) de 3\n%d Multiplo(s) de 4\n%d Multiplo(s) de 5\n", c2, c3, c4, c5);
+	free(vec);
+}
