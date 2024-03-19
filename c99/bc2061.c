@@ -1,30 +1,26 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+
 int main()
 {
-	int nAb, nA, i, tam = 6;
+	int nAb, nA, i;
+	char pal[7];
 	
 	scanf("%d %d", &nAb, &nA);
 	
-	//getchar();
+	getchar();
 	
 	for(i = 0; i < nA; i++)
 	{
-		//scanf("%s", pal);
-		pal = malloc((tam+1)* sizeof(char));
-		
-		gets(pal);
+		scanf("%s", pal);
 		
 		if(strcmp(pal, "fechou") == 0)
 		{
 			nAb -= 1;
-			nA += 2;
+			nAb += 2;
 		}
 		else
 			nAb -= 1;
-			
-		free(pal);	
 	}
 	
 	
