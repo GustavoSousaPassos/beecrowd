@@ -7,14 +7,12 @@ using namespace std;
 int main()
 {
 	int num;
-	double fPa, sPa, res;
+	double fPa, sPa, ra = sqrt(5);
 	
 	cin >> num;
+
+	fPa = pow((1 + ra) / 2, num);
+	sPa = pow((1 - ra) / 2, num);
 	
-	fPa = pow((1 + sqrt(5)) / 2, num);
-	sPa = pow((1 - sqrt(5)) / 2, num);
-	
-	res = (fPa - sPa) / sqrt(5);
-	
-	cout << fixed << setprecision(1) << res << endl;
+	cout << fixed << setprecision(1) << (fPa - sPa) / ra << endl;
 }

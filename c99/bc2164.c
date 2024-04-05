@@ -4,14 +4,16 @@
 int main()
 {
 	int num;
-	double fPa, sPa, res;
+	double fPa, sPa, ra, res;
 	
 	scanf("%d", &num);
 	
-	fPa = pow((1 + sqrt(5)) / 2, num);
-	sPa = pow((1 - sqrt(5)) / 2, num);
+	ra = sqrt(5);
 	
-	res = (fPa - sPa) / sqrt(5);
+	fPa = pow((1 + ra) / 2, num);
+	sPa = pow((1 - ra) / 2, num);
+	
+	res = (fPa - sPa) / ra;
 	
 	printf("%.1f\n", res);
 }
