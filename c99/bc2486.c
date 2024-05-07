@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-//#include <stdbool.h>
+
 int main()
 {
 	int qLi, qtA, sTo, i;
@@ -36,7 +36,7 @@ int main()
 					token = strtok(NULL, " \n");
 				}
 				
-				
+				if(strcmp(nAl, "suco de laranja") == 1) printf("sla\n");
 			}
 		}
 	}
