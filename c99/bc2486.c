@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
@@ -10,7 +11,6 @@ int main()
 	
 	while(1)
 	{
-		strcpy(nAl, "");
 		sTo = 0;
 		
 		scanf("%d", &qLi);
@@ -21,7 +21,6 @@ int main()
 		{
 			for(i = 0; i < qLi; i++)
 			{
-				
 				fgets(line, sizeof(line), stdin);
 				
 				char *token = strtok(line, " \n");
@@ -36,8 +35,19 @@ int main()
 					token = strtok(NULL, " \n");
 				}
 				
-				if(strcmp(nAl, "suco de laranja") == 1) printf("sla\n");
+				if(strcmp(nAl, "suco de laranja") == 0) sTo += 120*qtA;
+				else if(strcmp(nAl, "laranja") == 0) sTo += 50*qtA;
+				else if(strcmp(nAl, "morango fresco") == 0) sTo += 85*qtA;
+				else if(strcmp(nAl, "mamao") == 0) sTo += 85*qtA;
+				else if(strcmp(nAl, "goiaba vermelha") == 0) sTo += 70*qtA;
+				else if(strcmp(nAl, "manga") == 0) sTo += 56 * qtA;
+				else if(strcmp(nAl, "brocolis") == 0) sTo += 34*qtA;
 			}
+			
+			if(sTo < 110) printf("Mais %d mg\n", abs(sTo-110));
+			else if(sTo > 130) printf("Menos %d mg\n", abs(sTo-130));
+			else printf("%d mg\n", sTo);
 		}
+				
 	}
 }
