@@ -1,11 +1,10 @@
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
 int main()
 {
-	string val;
-	
-	cin >> val;
+	string cpf;
 	
 }
