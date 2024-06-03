@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+
+
 int main()
 {
 	int qLi, qtA, sTo, i;
