@@ -16,6 +16,14 @@ while True:
                 nAl += " "
             nAl += line[tam-1]
 
-            print(f"{qtdA}  {nAl}")
+            if nAl == "suco de laranja": sTo += qtdA*120
+            elif nAl == "laranja": sTo += qtdA*50
+            elif nAl == "morango fresco": sTo += qtdA*85
+            elif nAl == "mamao": sTo += qtdA*85
+            elif nAl == "goiaba vermelha": sTo += qtdA*70
+            elif nAl == "manga": sTo += qtdA*56
+            elif nAl == "brocolis": sTo += qtdA*34
 
+            print(f"{qtdA}  {nAl}")
+            print(sTo)
             nAl = ""
