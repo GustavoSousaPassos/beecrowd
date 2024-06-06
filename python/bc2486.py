@@ -24,6 +24,8 @@ while True:
             elif nAl == "manga": sTo += qtdA*56
             elif nAl == "brocolis": sTo += qtdA*34
 
-            print(f"{qtdA}  {nAl}")
-            print(sTo)
             nAl = ""
+
+        if sTo < 110: print(f"Mais {110-sTo} mg")
+        elif sTo > 130: print(f"Menos {sTo-130} mg")
+        else: print(f"{sTo} mg")
