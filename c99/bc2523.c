@@ -1,16 +1,33 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <stdlib.h>
+
 int main()
 {
-	char cLe[26], token;
+	char cLe[26], cPos[50];
+	int num, i;
 	
-	while(true)
+	while(scanf("%s", cLe) == true)
 	{
-		cLe[0] = '\0';
-		fgets(cLe, sizeof(cLe), stdin);
+		//cLe[0] = '\0';
 		
-		if(cLe == EOF) break;
+		scanf("%d", &num);
+		
+		int cVal[num];
+		getchar();
+		
+		fgets(cPos, sizeof(cPos), stdin);
+		
+		char *token = strtok(cPos, " \n");
+		
+		for(i = 0; i < num; i++)
+		{
+			cVal[i] = atoi(token);
+			token = strtok(NULL, " \n");
+		}
+		
+		char *res = malloc(sizeof(char)*num);
 		
 	}
 }
