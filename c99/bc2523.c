@@ -23,11 +23,18 @@ int main()
 		
 		for(i = 0; i < num; i++)
 		{
-			cVal[i] = atoi(token);
+			cVal[i] = atoi(token)-1;
 			token = strtok(NULL, " \n");
 		}
 		
 		char *res = malloc(sizeof(char)*num);
 		
+		for(i = 0; i < num; i++)
+		{
+		    int pos = cVal[i];
+			res[i] = cLe[pos];
+		}
+		
+		puts(res);
 	}
 }
