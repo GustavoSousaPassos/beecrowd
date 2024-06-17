@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdbool.h>
 #include <stdlib.h>
 
 int main()
@@ -8,11 +7,9 @@ int main()
 	char cLe[26], cPos[50];
 	int num, i;
 	
-	while(scanf("%s", cLe) == true)
+	while(scanf("%s", cLe) == 1)
 	{
-		//cLe[0] = '\0';
-		
-		scanf("%d", &num);
+		if(scanf("%d", &num) != 1) break;
 		
 		int cVal[num];
 		getchar();
@@ -23,18 +20,24 @@ int main()
 		
 		for(i = 0; i < num; i++)
 		{
-			cVal[i] = atoi(token)-1;
-			token = strtok(NULL, " \n");
+			if(token != NULL)
+			{
+				cVal[i] = atoi(token) - 1;
+				token = strtok(NULL, " \n");
+			}
 		}
 		
-		char *res = malloc(sizeof(char)*num);
+		char *res = malloc(sizeof(char)*(num+1));
 		
 		for(i = 0; i < num; i++)
 		{
 		    int pos = cVal[i];
-			res[i] = cLe[pos];
+		    if(pos >= 0 && pos <= 26) res[i] = cLe[pos];
 		}
+		res[num] = '\0';
 		
 		puts(res);
+	
+		free(res);
 	}
 }
