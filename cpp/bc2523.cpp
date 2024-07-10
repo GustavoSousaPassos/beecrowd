@@ -7,12 +7,13 @@ using namespace std;
 
 int main()
 {
-	string cLe, cPos, token;
+	string cLe, cPos, token, res;
 	vector<int> vec;
-	int num;
+	int num, pos;
 	
 	while(cin >> cLe)
 	{
+	    res = "";
 		cin >> num;
 		cin.ignore();
 		
@@ -24,5 +25,15 @@ int main()
 		{
 			vec.push_back(stoi(token));	
 		}
+		
+		for(int i = 0; i < num; i++)
+		{
+		    pos = vec[i] - 1;
+		    res += cLe[pos];
+		}
+
+        cout << res << endl;
+        
+        vec.clear();
 	}
 }
