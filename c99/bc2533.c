@@ -5,17 +5,17 @@
 int main()
 {
 	int fSo, sSo, fVal, sVal, nCa, i, j;
-	char str[4];
+	char str[5];
 	double res;
 	
-	while(scanf("%d", &nCa) == 1)
+	while(scanf("%d", &nCa))
 	{	
 		fSo = 0;
 		sSo = 0;
-		
 		getchar();
+		
 		for(i = 0; i < nCa; i++)
-		{	
+		{
 			fgets(str, sizeof(str), stdin);
 			
 			char *token = strtok(str, " \n");
@@ -28,9 +28,11 @@ int main()
 			
 			fSo += fVal * sVal;
 			sSo += sVal;
-		}
-		res = fVal / (sVal*100);
-		printf("%.4f", res);
 			
+			str[0] = '\0';
+		}
+		res = fSo / (sSo*100);
+		printf("%.4f", res);
+		
 	}
 }
