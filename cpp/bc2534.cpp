@@ -18,7 +18,7 @@ int main()
 		
 		for(int j = 0; j < qtdN; j++)
 		{
-			for(int i = 0; i < qtdN; i++)
+			for(int i = 0; i < qtdN-1; i++)
 			{
 				if(vec[i+1] > vec[i])
 				{
@@ -29,6 +29,11 @@ int main()
 			}
 		}
 		
+		for(int i = 0; i < nCh; i++)
+		{
+			cin >> vNo;
+			cout << vec[vNo] << endl;
+		}
 		
 	}
 }
