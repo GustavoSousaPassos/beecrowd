@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,23 +18,12 @@ int main()
 			vec[i] = vNo;
 		}
 		
-		for(int j = 0; j < qtdN; j++)
-		{
-			for(int i = 0; i < qtdN-1; i++)
-			{
-				if(vec[i+1] > vec[i])
-				{
-					aux = vec[i];
-					vec[i] = vec[i+1];
-					vec[i+1] = aux;
-				}
-			}
-		}
+		sort(vec, vec + qtdN, greater<int>());
 		
 		for(int i = 0; i < nCh; i++)
 		{
 			cin >> vNo;
-			cout << vec[vNo] << endl;
+			cout << vec[vNo-1] << endl;
 		}
 		
 	}
