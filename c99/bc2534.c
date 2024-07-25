@@ -4,7 +4,7 @@ int main()
 {
 	int aux, nCh, val, qtdN, i, j;
 	
-	while(scanf("%d %d", &qtdN, &nCh))
+	while(scanf("%d %d", &qtdN, &nCh == 2))
 	{
 		int vec[qtdN];
 		
