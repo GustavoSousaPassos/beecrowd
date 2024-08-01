@@ -17,5 +17,6 @@ int main()
 			if(vec[i] >= aMi &&  vec[i] <= aMax) count++;
 		
 		printf("%d\n", count);
+		free(vec);
 	}
 }
