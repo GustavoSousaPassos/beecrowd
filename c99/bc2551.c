@@ -3,7 +3,7 @@
 int main()
 {
 	int nDi, dMi, dis, i;
-	float vMe, vel;
+	double vMe, vel;
 	
 	while(scanf("%d", &nDi) == 1)
 	{
@@ -13,11 +13,11 @@ int main()
 		{
 			scanf("%d %d", &dMi, &dis);
 			
-			vel = dis / dMi;
+			vel = (double)(dis *1000) / (dMi*60);
 			
-			if(vel > dMi) 
+			if(vel > vMe) 
 			{
-				printf("%d\n", i);
+				printf("%d\n", i+1);
 				vMe = vel;
 			}
 		}
