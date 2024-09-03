@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
 #include <stdbool.h>
+
 int main()
 {
 	int nLi, nCol, i, j, sum;
@@ -45,18 +47,18 @@ int main()
 		
 		for(i = 1; i < nLi; i++)
 		{
-			sum = 0;
-			
 			for(j = 0; j < nCol; j++)
 			{
-				fVe = mat[i-1][j] == 1;
-				sVe = mat[i+1][j] == 1;
-				tVe = mat[i][j-1] == 1;
-				qVe = mat[i][j+1] == 1;
+				fVe = i > 0 && mat[i-1][j] >= 1;
+				sVe =  i < nLi-1 && mat[i+1][j] >= 1;
+				tVe = j > 0 && mat[i][j-1] >= 1;
+				qVe = j < nCol-1 && mat[i][j+1] >= 1;
 				
 				if(mat[i][j] == 1) mat[i][j] = 9;
 				else
 				{
+					sum = 0;
+					
 					if(fVe) sum++;
 					if(sVe) sum++;
 					if(tVe) sum++;
