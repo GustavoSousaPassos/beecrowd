@@ -30,9 +30,9 @@ int main()
 		for(i = 0; i < nCol; i++)
 		{
 			sum = 0;
-			sVe = mat[1][i] == 1;
-			tVe = mat[0][i-1] == 1;
-			qVe = mat[0][i+1] == 1;
+			sVe = (nLi > 1)  && (mat[1][i] == 1);
+			tVe = (i > 0) && (mat[0][i-1] == 1);
+			qVe = (i < nCol-1) && (mat[0][i+1] == 1);
 			
 			if(mat[0][i] == 1) mat[0][i] = 9;
 			else
@@ -49,10 +49,10 @@ int main()
 		{
 			for(j = 0; j < nCol; j++)
 			{
-				fVe = i > 0 && mat[i-1][j] >= 1;
-				sVe =  i < nLi-1 && mat[i+1][j] >= 1;
-				tVe = j > 0 && mat[i][j-1] >= 1;
-				qVe = j < nCol-1 && mat[i][j+1] >= 1;
+				fVe = (i > 0) && (mat[i-1][j] >= 1);
+				sVe =  (i < nLi-1) && (mat[i+1][j] >= 1);
+				tVe = (j > 0 ) && (mat[i][j-1] >= 1);
+				qVe = (j < nCol-1) && (mat[i][j+1] >= 1);
 				
 				if(mat[i][j] == 1) mat[i][j] = 9;
 				else
