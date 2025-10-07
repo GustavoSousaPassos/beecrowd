@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8515b52-df96-4bc0-b3df-f72a1c535ce1" name="Changes" comment="" />
+    <list default="true" id="e8515b52-df96-4bc0-b3df-f72a1c535ce1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,25 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.bc1192.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc1871.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2377.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2414.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2686.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2702.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2708.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc2753.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bc3346.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gustavo Sousa Passos/OneDrive/Área de Trabalho/beecrowd/python&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bc1192.executor": "Run",
+    "Python.bc1871.executor": "Run",
+    "Python.bc2377.executor": "Run",
+    "Python.bc2414.executor": "Run",
+    "Python.bc2686.executor": "Run",
+    "Python.bc2702.executor": "Run",
+    "Python.bc2708.executor": "Run",
+    "Python.bc2750.executor": "Run",
+    "Python.bc2753.executor": "Run",
+    "Python.bc3346.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Gustavo Sousa Passos/OneDrive/Área de Trabalho/beecrowd/python"
   }
-}</component>
-  <component name="RunManager" selected="Python.bc1192">
+}]]></component>
+  <component name="RunManager" selected="Python.bc2750">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
       <option name="ENV_FILES" value="" />
@@ -120,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bc2377" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="bc2750" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,7 +136,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bc2377.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bc2750.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bc2750" />
         <item itemvalue="Python.bc1192" />
         <item itemvalue="Python.bc3346" />
         <item itemvalue="Python.bc1871" />
         <item itemvalue="Python.bc2753" />
-        <item itemvalue="Python.bc2377" />
       </list>
     </recent_temporary>
   </component>
