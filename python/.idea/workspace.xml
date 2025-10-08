@@ -37,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.bc1192.executor": "Run",
-    "Python.bc1871.executor": "Run",
-    "Python.bc2377.executor": "Run",
-    "Python.bc2414.executor": "Run",
-    "Python.bc2686.executor": "Run",
-    "Python.bc2702.executor": "Run",
-    "Python.bc2708.executor": "Run",
-    "Python.bc2750.executor": "Run",
-    "Python.bc2753.executor": "Run",
-    "Python.bc3346.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Gustavo Sousa Passos/OneDrive/Área de Trabalho/beecrowd/python"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.bc1192.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc1871.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2377.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2414.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2686.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2702.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2708.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2750.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc2753.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bc3346.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gustavo Sousa Passos/OneDrive/Área de Trabalho/beecrowd/python&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.bc2750">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="python" />
