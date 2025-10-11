@@ -2,14 +2,11 @@ line = list(map(int, input().split(" ")))
 cVal = []
 so = 0
 
-if line[1] > 0:
-    cVal.append(line[0])
-    cVal.append(line[1])
+if line[1] > 0: cVal.extend([line[0], line[1]])
 else:
     for c in range(1, len(line)):
         if line[c] > 0:
-            cVal.append(line[0])
-            cVal.append(line[c])
+            cVal.extend([line[0], line[c]])
             break
 
 for c in range(0, 2):
